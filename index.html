@@ -21,9 +21,9 @@ body{
   align-items: center;}
 .terminal {
   width: 90%;
-  max-width: 800px;
-  height: 40%;
-  min-height: 300px;
+  max-width: 900px;
+  height: 50%;
+  min-height: 400px;
   background: #20202088;
   border-radius: 7px 7px;
   transition: box-shadow 0.3s linear;
@@ -54,11 +54,11 @@ body{
 .head__circle {
   position: relative;
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   margin-left: 4px;
   font-size: 0;
-  font-weight: 700;
+  font-weight: 900;
   border-radius: 10px;}
 .head__circle--close {
   background: #ff5c5c;
@@ -76,10 +76,10 @@ body{
   border: 1px solid #e09e3e;}
 .head__circle--turn:hover:before {
   content: "";
-  top: 4px;
-  left: 1px;
-  width: 8px;
-  height: 2px;
+  top: 6px;
+  left: 3px;
+  width: 10px;
+  height: 4px;
   background: #9a5518;
   position: absolute;}
 .head__circle--expand {
@@ -87,10 +87,10 @@ body{
   border: 1px solid #14ae46;}
 .head__circle--expand:hover:before {
   content: "";
-  top: 4px;
-  left: 1px;
-  width: 8px;
-  height: 2px;
+  top: 6px;
+  left: 3px;
+  width: 10px;
+  height: 4px;
   background: #006519;
   position: absolute;}
 .head__circle--expand:hover:after {
@@ -104,8 +104,8 @@ body{
   
 /*Buttons*/
 .menu__container {
-max-width: 500px;
-height: 100px;
+max-width: 800px;
+height: 200px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 50px;
@@ -125,7 +125,7 @@ height: 100%;}
 .menu__container .menu a {
 text-decoration: none;
 color: #fff;
-font-size: 20px;
+font-size: 40px;
 transition: all 0.1s linear;}
 .menu__container--2 {
 background: linear-gradient(20deg, #20202088 160%, #8ec5fcb7 100%);
@@ -136,9 +136,9 @@ transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
 
 /*Footer*/
 footer {background-color: #222;color: #fff;font-size: 14px;bottom: 0;position: fixed;left: 0;right: 0;text-align: center;z-index: 999;}
-footer p {margin: 10px 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida  Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+footer p {margin: 20px 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida  Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 footer .fa-heart{color: red;}
-footer a {color: #3c97bf;text-decoration: none;margin-right:5px;}
+footer a {color: #3c97bf;text-decoration: none;margin-right:10px;}
 </style></head>
 <body onload="typewriter();">
 <br><br><br><br>
@@ -161,10 +161,10 @@ var aText = new Array(
   "<span class='terminal__text__span'>Developer And Hacker</span>",
   "<span class='terminal__text__span'>exit()</span>");
   
-var iSpeed = 50; 
+var iSpeed = 60; 
 var iIndex = 0; 
 var iArrLength = aText[0].length; 
-var iScrollAt = 20; 
+var iScrollAt = 40; 
 var iTextPos = 0; 
 var sContents = ''; 
 var iRow; 
@@ -181,7 +181,7 @@ function typewriter()
   iIndex++;
   if ( iIndex != aText.length ) {
    iArrLength = aText[iIndex].length;
-   setTimeout("typewriter()", 20);}
+   setTimeout("typewriter()", 30);}
  } else {
   setTimeout("typewriter()", iSpeed);}}
 $(function() {
